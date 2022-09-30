@@ -29,7 +29,7 @@ const Auth = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        console.log('HeyHey');
         const { fullName, username, password, phoneNumber, avatarURL } = form;
 
         const URL = 'http://localhost:5000/auth';
@@ -52,7 +52,7 @@ const Auth = () => {
         window.location.reload();
     }
 
-  return (
+  return (  
     <div className="auth__form-container">
         <div className="auth__form-container_fields">
             <div className="auth__form-container_fields-content">
